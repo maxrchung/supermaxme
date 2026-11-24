@@ -1,17 +1,15 @@
-import { createSignal } from "solid-js";
+import styles from "./App.module.css";
 
 export default function App() {
-  const [count, setCount] = createSignal(0);
-
   return (
-    <main class="container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ovzWmFTnhUU?si=Y_Op9AMudVFJ4rlv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
-
-      <h1>Solid v2 Counter</h1>
-
-      <button type="button" onClick={() => setCount((c) => c + 1)}>
-        Count: {count()}
-      </button>
+    <main>
+      <iframe
+        class={styles.iframe}
+        src="https://www.youtube.com/embed/ovzWmFTnhUU?autoplay=1&mute=0&playsinline=1&loop=1"
+        title="【DDR SN】 MAX 300 (Super-Max-Me Mix) / Jondi & Spesh [DOUBLE CHALLENGE] 譜面確認+Clap"
+        allow="autoplay; fullscreen"
+        referrerpolicy="strict-origin-when-cross-origin"
+      />
     </main>
   );
 }
