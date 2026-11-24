@@ -1,0 +1,22 @@
+{
+  "name": "supermaxme",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --bun vite",
+    "build": "bun --bun vite build",
+    "preview": "bun --bun vite preview",
+    "lint": "bun lint",
+    "fmt": "bun fmt"
+  },
+  "dependencies": {
+    "@solidjs/web": "^2.0.3",
+    "solid-js": "^2.0.3"
+  },
+  "devDependencies": {
+    "@solidjs/vite-plugin": "^3.0.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
