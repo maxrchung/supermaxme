@@ -1,0 +1,126 @@
+@layer reset, base, theme, components, utilities;
+
+@layer reset {
+  :where(
+    html,
+    body,
+    div,
+    span,
+    main,
+    header,
+    footer,
+    nav,
+    section,
+    article,
+    aside,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    ul,
+    ol,
+    li,
+    dl,
+    dt,
+    dd,
+    figure,
+    figcaption,
+    table,
+    thead,
+    tbody,
+    tfoot,
+    tr,
+    th,
+    td,
+    form,
+    fieldset,
+    legend,
+    label,
+    input,
+    button,
+    textarea,
+    select,
+    img,
+    picture,
+    video,
+    canvas,
+    svg,
+    dialog,
+    details,
+    summary
+  ) {
+    box-sizing: border-box;
+  }
+
+  :where(html) {
+    color-scheme: light dark;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+  :where(body) {
+    margin: 0;
+    min-block-size: 100dvb;
+    line-height: 1.5;
+    font-family:
+      system-ui,
+      -apple-system,
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :where(h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd) {
+    margin: 0;
+  }
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    line-height: 1.15;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  :where(p, li, figcaption) {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+  }
+
+  :where(ul[role="list"], ol[role="list"]) {
+    list-style: none;
+    padding-inline-start: 0;
+  }
+
+  :where(a:not([class])) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+  }
+
+  :where(img, picture, video, canvas, svg) {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+
+  :where(input, button, textarea, select) {
+    font: inherit;
+    color: inherit;
+  }
+
+  :where(textarea:not([rows])) {
+    min-block-size: 10em;
+  }
+
+  :where(:target) {
+    scroll-margin-block: 5ex;
+  }
+
+  :where(#root) {
+    isolation: isolate;
+  }
+}
